@@ -1,0 +1,182 @@
+
+<html>
+<header><title>Exprolation on Health bills</title></header>
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: linen;
+    }
+    
+    header {
+      margin-left: 0px;
+      margin:0px;
+    }
+
+    h2 {
+      margin-left: 0px;
+      class: mb-1;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      background: linen;
+      overflow:hidden;
+    }
+
+    .jumbotron{
+      color: #FFFFFF;
+      background-color:maroon !important;
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-maroon rounded bg-dark">
+      <h1 align="center">Stroke contributes to your health insurance bills now!</h1>
+      <h5 align="center">Han Zhang    <br>  hz5g21@soton.ac.uk</h1>
+    </div>
+    
+    <main role="main">
+     <div class="nav-scroller mb-4">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#Introduction"><b> Introduction</b></a>
+        <a class="p-2 text-muted" href="#Data Story Organisation"><b> Story Organisation</b></a>
+        <a class="p-2 text-muted" href="#Map Distribution "><b> Map Distribution  </b></a>
+        <a class="p-2 text-muted" href="#Categorical Features"><b>Categorical Features </b></a>
+        <a class="p-2 text-muted" href="#Numberical Features"><b>Numerical Features</b></a>
+        <a class="p-2 text-muted" href="#Machine Leaning Model"><b>Machine Learning Model</b></a>
+        <a class="p-2 text-muted" href="#Conclusion"><b>Summary</b></a>
+      </nav>
+    </div>
+
+
+    <!-- Introduction -->
+    <div class="container">
+      <h3 id="Introduction" class="mt-4 p-2">Introduction</h3>
+      <p>In the United States, the healthcare market generally lacks transparent pricing standards due to the market-based pricing of health insurance. charges are also changing. How do insurance companies calculate your billing costs? What is the benchmark? Now, it's time to demystify it. This data story is about the relationship between customer characteristics and their health insurance spending and insurance billing benchmark settings.
+      </p>
+
+      <h3 id="Data Story Organisation" class="mt-4 p-2">Story Organisation</h3>
+      <p>The following is the sequence of events in this data story. Using a line graph to display yearly trends in medical insurance spending at the macro nation level. 
+        This indicates how health insurance has evolved and changed. The average health insurance spending per capita in the United States is depicted on an interactive map. 
+        When the interactive map is compared to each state's per capita income, it is discovered that there is a positive relationship between per capita income and per capita insurance spending.
+      </p>
+
+      <p>There are 11 elements that influence insurance prices at the individual level. 
+        The treemap is used to show how sub-type factors impact the cost of medical insurance, and a horizontal histogram is used to show the linear connection between each sub-type variable and the cost of medical insurance. 
+        Draw a link between the numerical variable and the insurance cost on the numerical variable. Finally, a formula for selecting medical insurance is defined using a linear programming machine learning model.</p>
+
+      <h2  class="mt-4 p-2">National Level</h2>
+      <p> We'll start by looking at the influence of medical insurance at a national level. 
+        We'll compile a list of health insurance bills in each state in the US and learn about the importance of health insurance and how it's distributed, then compare per-capita income to per-capita insurance spending.
+      </p>
+
+      <h3 id="Map Distribution" class="mt-4 p-2"> Map Distribution </h3>
+      <!-- the first one  -->
+      <div class='tableauPlaceholder' id='viz1641681626408' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tendency_16408885316840&#47;2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1641681626408');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='777px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='777px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <p></p><h6>Source: <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsStateHealthAccountsResidence">Health Expenditures by State of Residence, 1991-2014</a></h6><p></p>
+      <p></p><h6>Source: <a href="https://www.bea.gov/news/blog/2016-07-07/real-personal-income-states-2014">Real Personal Income for States, 2014</a></h6><p></p>
+      <p> When comparing the cost of per capita health insurance bills from 1991 to 2014, the cost has risen year after year. People are more eager to get health insurance, and the costs are rising, which has a significant impact on the lives of people in various places. Insurance appears to be growing important. So, it is necessary to investigate what factors affect health insurance bills.</p>
+
+      <p> 
+        The insurance bills of each state in 2014 are interactively depicted, starting with a full analysis of US medical insurance expenses. California, New York, Florida, and Texas are without a doubt the four states with the highest medical insurance costs.
+The United States now ranks in the top ten in terms of per capita income, with California, New York, Florida, and Texas also ranking in the top four. So we can assume that per capita income is positively correlated with health insurance bills.
+      </p>
+      
+
+    
+
+    <h2  class="mt-4 p-2">Individual Level</h2>
+    <p>
+      After completing the macro-level statistics, we begin to look at the individual level. We will look at personal health insurance billing statistics. The data contains about 50k records, and each record contains 8 classification features, 3 numeric features, and 1 target feature.
+       The eight classification features are gender, high blood pressure, married or not, type of work, type of residence, heart disease, smoking status, and stroke. They all represent the characteristics of each policyholder. For example, if the stroke is 1, it means that the policyholder has a stroke. The 3 numerical features are age, avg_glucose_level, and BMI (body mass index). Now, our goal is to analyze the impact of categorical variables on per capita health insurance.
+    </p>
+
+    <h3 id="Categorical Features" class="p-2" margin-top="100px">Categorical Features</h3>
+    <!-- the second one  -->
+    <div class='tableauPlaceholder' id='viz1642159170300' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='category_16414759522620&#47;2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1642159170300');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p></p><h6>Source: <a href="https://www.kaggle.com/hanzhan/health-insurance-bills">Insurance_Healthcare</a></h6><p></p>
+    <p>
+      As shown in the figure, this treemap displays all the classification features. By checking the features, we can see that the per capita medical insurance changes. Participants can use their own circumstances to check different features to check the per capita insurance cost. Discover the relationship between different parts and the whole. The larger the target area, the higher the per capita medical insurance bill.
+    </p>
+    
+    <!-- the fourth one  -->
+    <div class='tableauPlaceholder' id='viz1641660707072' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='list_cat&#47;2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1641660707072');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='587px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='587px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p></p><h6>Source: <a href="https://www.kaggle.com/hanzhan/health-insurance-bills">Insurance_Healthcare</a></h6><p></p>
+    <p>
+      Since the impact of categorical variables on the target medical insurance bill is difficult to visualize, one-hot encoding technology is used to convert categorical variables into numerical variables. By calculating their previous correlation coefficient to express the corresponding impact. Through the above histogram, the features are divided into positive and negative correlations. It's easy to see that stroke is the most affecting health insurance bill. The correlation coefficient reached 0.65. The second was ever_marry, and the correlation coefficient reached 0.20. The remaining variables have little effect on the target. So we can be sure that the presence or absence of stroke has a great impact on health insurance bills.
+    </p>
+
+
+    <h3 id="Numberical Features" class="p-2" margin-top="100px">Numberical Features</h3>
+    <!-- the third one  -->
+    <div class='tableauPlaceholder' id='viz1642161990836' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='num_feature&#47;2_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1642161990836');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p>After analyzing categorical variables, we look at the impact of numerical variables. This visualization can give us the relationship between numerical variables and medical insurance. As shown in the figure, the three variables are all positively correlated with health insurance bills, with R2 being 0.0954, 0.0004, and 0.3461. This means that approximately BMI has the greatest correlation with medical insurance. The value of 0.3641 can be interpreted by BMI. Next is age, and last is the average glucose level. In addition, you can also change the numerical variables to see new effects. For example, BMI is set at 18.5-24.9, the level of a normal person, we can observe the impact of the three variables on the target value in this case.</p>
+
+    <h3 id="Machine Leaning Model" class="p-2" margin-top="100px">Machine Leaning Model</h3>
+    <!-- the third one  -->
+    <div class='tableauPlaceholder' id='viz1642166339621' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='error_16416684489970&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1642166339621');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p></p><h6>Source: <a href="https://www.kaggle.com/hanzhan/health-insurance-bills">Insurance_Healthcare</a></h6><p></p>
+    <p>In this section, we use linear regression to predict health insurance costs. Use L1 regularization to filter features, and the results are shown in the figure. When alpha equals 40. The slope of the model's RMSE rise becomes larger. It shows that alpha equal to 40 is a suitable model, it can filter the features enough, but the error of the model can also be small. The picture shows the gap between the true value of the model and the predicted value when alpha=40. Through machine learning, we get a formula:
+      <math>
+      <array align="c"> 
+        3.036 &times age + 0.8089 &times avg_glucose_level+ 38.37 &times BMI +  1510 &times stroke = health insurance bills
+      </array>
+    </math>
+    . So from this point of view, BMI and Stroke are the most affected factors. Stroke is the most affected factor that increases your health insurance bills since it has a maximum coefficient.
+    </p>
+    
+   
+
+    <h3 id="Conclusion" class="p-2" margin-top="100px">Summary</h3>
+    <p>
+      From this data story, age, BMI and stroke are the most affected factors that contribute to your health insurance bills. So reducing the risk of stroke and maintaining a well-balanced body is one way to reduce insurance premiums.
+    </p>
+
+
+
+    
+<section>
+  <div class="section-heading">
+      <div class="wrapper">
+          <div>
+              <h3 id="references">
+                  
+                  References
+              </h3>
+              </h2>
+          </div>
+      </div>
+  </div>
+  <div class="wp-block-column" style="width: 100%">
+      <ul>
+          <li><a style="font-family: 'Times New Roman'">[1] Bruce Ratner. The correlation coefficient: Its values range between+ 1/- 1, or do they? Journal of
+            targeting, measurement and analysis for marketing, 17(2):139–142, 20</a></li>
+          <li><a style="font-family: 'Times New Roman'">[2] J. Brownlee, "Why One-Hot Encode Data in Machine Learning?", Machine Learning Mastery, 2022. [Online]. Available: https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/. [Accessed: 08- Jan- 2022].</a></li>
+          <li><a style="font-family: 'Times New Roman'">[3]"Survey: 79 Million Americans Have Problems with Medical Bills or Debt", Commonwealthfund.org, 2022. [Online]. Available: https://www.commonwealthfund.org/publications/newsletter-article/survey-79-million-americans-have-problems-medical-bills-or-debt. [Accessed: 13- Jan- 2022].</a></li>
+
+      </ul>
+  </div>
+</section>
+
+</main>
+</div>
+</body>
+</html> 
+
+
